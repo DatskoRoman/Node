@@ -6,31 +6,6 @@
 // перед тим створити 4 папки (програмно) - наприклад - manOlder20, manYounger20, womanOlder20, womanYounger20
 // і розподілити ваших юзерів саме по відповідних папках
 
-
-const fs = require('fs');
-const path = require('path');
-
-const mkdirPathManOlder = path.join(__dirname, 'manOlder20');
-const mkdirPathManYounger = path.join(__dirname, 'manYounger20');
-const mkdirPathWomanOlder = path.join(__dirname, 'womanOlder20');
-const mkdirPathWomanYounger = path.join(__dirname, 'womanYounger20');
-
-fs.mkdir(mkdirPathManOlder, {recursive: true}, (err) => {
-    console.log(err);
-});
-
-fs.mkdir(mkdirPathManYounger, {recursive: true}, (err) => {
-    console.log(err);
-});
-
-fs.mkdir(mkdirPathWomanOlder, {recursive: true}, (err) => {
-    console.log(err);
-});
-
-fs.mkdir(mkdirPathWomanYounger, {recursive: true}, (err) => {
-    console.log(err);
-});
-
 const users = [
     { name: 'olya', gender: 'female', age: 18 },
     { name: 'vova', gender: 'male', age: 20 },
@@ -43,6 +18,32 @@ const users = [
     { name: 'ira', gender: 'female', age: 32 },
     { name: 'dima', gender: 'male', age: 17 }
 ];
+
+const fs = require('fs');
+const path = require('path');
+
+const manOlder = path.join(__dirname, 'manOlder20');
+const manYounger = path.join(__dirname, 'manYounger20');
+const womanOlder = path.join(__dirname, 'womanOlder20');
+const womanYounger = path.join(__dirname, 'womanYounger20');
+
+fs.mkdir(manOlder, {recursive: true}, (err) => {
+    console.log(err);
+});
+
+fs.mkdir(manYounger, {recursive: true}, (err) => {
+    console.log(err);
+});
+
+fs.mkdir(womanOlder, {recursive: true}, (err) => {
+    console.log(err);
+});
+
+fs.mkdir(womanYounger, {recursive: true}, (err) => {
+    console.log(err);
+});
+
+
 
 
 users.forEach(user => {
