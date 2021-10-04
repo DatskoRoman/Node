@@ -5,6 +5,8 @@
 // вміст це сам ваш юзер - { name: 'olya', gender: 'female', age: 20 }
 // перед тим створити 4 папки (програмно) - наприклад - manOlder20, manYounger20, womanOlder20, womanYounger20
 // і розподілити ваших юзерів саме по відповідних папках
+const fs = require('fs');
+const path = require('path');
 
 const users = [
     { name: 'olya', gender: 'female', age: 18 },
@@ -19,56 +21,71 @@ const users = [
     { name: 'dima', gender: 'male', age: 17 }
 ];
 
-const fs = require('fs');
-const path = require('path');
-
-const manOlder = path.join(__dirname, 'manOlder20');
-const manYounger = path.join(__dirname, 'manYounger20');
-const womanOlder = path.join(__dirname, 'womanOlder20');
-const womanYounger = path.join(__dirname, 'womanYounger20');
+const manOlder = path.join(__dirname,  'manOlder20');
+const manYounger = path.join(__dirname,  'manYounger20');
+const womanOlder = path.join(__dirname,  'womanOlder20');
+const womanYounger = path.join(__dirname,  'womanYounger20');
 
 fs.mkdir(manOlder, {recursive: true}, (err) => {
-    console.log(err);
+    if (err) {
+        console.log(err);
+        return;
+    }
 });
 
 fs.mkdir(manYounger, {recursive: true}, (err) => {
-    console.log(err);
+    if (err) {
+        console.log(err);
+        return;
+    }
 });
 
 fs.mkdir(womanOlder, {recursive: true}, (err) => {
-    console.log(err);
+    if (err) {
+        console.log(err);
+        return;
+    }
 });
 
 fs.mkdir(womanYounger, {recursive: true}, (err) => {
-    console.log(err);
+    if (err) {
+        console.log(err);
+        return;
+    }
 });
 
-
-
-
-users.forEach(user => {
-    if (user.gender === 'male' && user.age > 20) {
-        fs.writeFile(path.join(__dirname, 'manOlder20', `${user.name}.txt`),
-            JSON.stringify(user), err => {
+for (const user of users) {
+    if (user.age > 20 && user.gender === "male") {
+        fs.writeFile(path.join(__dirname, 'manOlder20', `${user.name}.txt`), `${user.name}, ${user.age}`, (err) => {
+            if (err) {
                 console.log(err);
-            });
+                return;
+            }
+        })
     }
-    else if (user.gender === 'male' && user.age < 20) {
-        fs.writeFile(path.join(__dirname, 'manYounger20', `${user.name}.txt`),
-            JSON.stringify(user), err => {
+    if (user.age < 20 && user.gender === "male") {
+        fs.writeFile(path.join(__dirname, 'manYounger20', `${user.name}.txt`), `${user.name}, ${user.age}`, (err) => {
+            if (err) {
                 console.log(err);
-            });
+                return;
+            }
+        })
     }
-    else if (user.gender === 'female' && user.age > 20) {
-        fs.writeFile(path.join(__dirname, 'womanOlder20', `${user.name}.txt`),
-            JSON.stringify(user), err => {
+    if (user.age > 20 && user.gender === "female") {
+        fs.writeFile(path.join(__dirname, 'womanOlder20', `${user.name}.txt`), `${user.name},  ${user.age}`, (err) => {
+            if (err) {
                 console.log(err);
-            });
+                return;
+            }
+        })
     }
-    else if (user.gender === 'female' && user.age < 20) {
-        fs.writeFile(path.join(__dirname, 'womanYounger20', `${user.name}.txt`),
-            JSON.stringify(user), err => {
+
+    if (user.age < 20 && user.gender === "female") {
+        fs.writeFile(path.join(__dirname, 'womanYounger20', `${user.name}.txt`), `${user.name},  ${user.age}`, (err) => {
+            if (err) {
                 console.log(err);
-            });
-    };
-});
+                return;
+            }
+        })
+    }
+}

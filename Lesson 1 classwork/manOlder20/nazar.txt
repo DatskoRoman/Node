@@ -1,1 +1,1 @@
-{"name":"nazar","gender":"male","age":23}
+nazar, 23

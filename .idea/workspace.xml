@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ae444dc-f3d8-41c7-a80b-4fbdbda3fbb8" name="Changes" comment="classwork node lesson 1" />
+    <list default="true" id="8ae444dc-f3d8-41c7-a80b-4fbdbda3fbb8" name="Changes" comment="classwork node lesson 1/1">
+      <change afterPath="$PROJECT_DIR$/Node_Lesson1_Homework/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 1 classwork/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 1 classwork/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 1 classwork/manOlder20/max.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 1 classwork/manOlder20/max.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 1 classwork/manOlder20/nazar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 1 classwork/manOlder20/nazar.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 1 classwork/manYounger20/dima.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 1 classwork/manYounger20/dima.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 1 classwork/manYounger20/roman.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 1 classwork/manYounger20/roman.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 1 classwork/womanOlder20/ira.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 1 classwork/womanOlder20/ira.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 1 classwork/womanOlder20/katia.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 1 classwork/womanOlder20/katia.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 1 classwork/womanOlder20/vira.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 1 classwork/womanOlder20/vira.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 1 classwork/womanYounger20/mariana.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 1 classwork/womanYounger20/mariana.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 1 classwork/womanYounger20/olya.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 1 classwork/womanYounger20/olya.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +31,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1yqxZK4IUxCitWPomA5OGlNepQw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1632992978865</updated>
       <workItem from="1632992980159" duration="8522000" />
-      <workItem from="1633333762093" duration="10094000" />
+      <workItem from="1633333762093" duration="14482000" />
     </task>
     <task id="LOCAL-00001" summary="classwork node lesson 1">
       <created>1633360078163</created>
@@ -56,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633360078163</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="classwork node lesson 1/1">
+      <created>1633360568818</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1633360568818</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,7 +97,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="classwork node lesson 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="classwork node lesson 1" />
+    <MESSAGE value="classwork node lesson 1/1" />
+    <option name="LAST_COMMIT_MESSAGE" value="classwork node lesson 1/1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

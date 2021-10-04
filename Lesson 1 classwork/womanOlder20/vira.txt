@@ -1,1 +1,1 @@
-{"name":"vira","gender":"female","age":22}
+vira,  22

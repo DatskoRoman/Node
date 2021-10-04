@@ -1,1 +1,1 @@
-{"name":"roman","gender":"male","age":15}
+roman, 15

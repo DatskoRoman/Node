@@ -1,1 +1,1 @@
-{"name":"max","gender":"male","age":60}
+max, 60
